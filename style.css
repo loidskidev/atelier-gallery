@@ -12,21 +12,33 @@ img{
     object-fit: cover;
 }
 
+h2 { 
+    width: 100%;
+    font-size: 30px; 
+    text-align: right;
+    grid-template-rows: repeat(1, 1fr);
+}
+
 /* Container */ 
 .container {
-    max-width: 100%;
-    width: 100%; 
-    display: grid;
-    column-gap: 50px;
-    grid-template-columns: repeat(3, 1fr);
+display: grid; 
+row-gap: 50px;
+grid-template-columns: auto auto auto;
+background-color:#feffff;
+padding: 10px;
 }
 
 /* Cards in general */
 .card {
     background-color:#feffff;
-    text-align: center;
+    border: 1px solid black;
     border-radius: 10px;
+    padding: 5px;
+    font-size: 5px;
+    text-align: center;
+    border: 1px solid black;
 }
+
 
 .card img {
     display: block; 
@@ -36,56 +48,9 @@ img{
 }
 /* Art categories start */ 
 /* card classes -->  <figure class="x"> */ 
-.modern-art {
+
+figcaption {
     background-color: #feffff;
-    text-align:center; 
-    color:#0561ec;
-    font-size: 20px;
-}
-
-.sculptures {
-    text-align:center; 
-    color:#0561ec;
-    font-size: 20px;
-}
-
-.photography {
-    text-align:center; 
-    color:#0561ec;
-    font-size: 20px;
-}
-
-.abstract {
-    text-align:center; 
-    color:#0561ec;
-    font-size: 20px;
-}
-
-.landscape {
-    text-align:center; 
-    color:#0561ec;
-    font-size: 20px;
-}
-
-.portraits {
-    text-align:center; 
-    color:#0561ec;
-    font-size: 20px;
-}
-
-.installations {
-    text-align:center; 
-    color:#0561ec;
-    font-size: 20px;
-}
-
-.digital-art {
-    text-align:center; 
-    color:#0561ec;
-    font-size: 20px;
-}
-
-.street-art {
     text-align:center; 
     color:#0561ec;
     font-size: 20px;
