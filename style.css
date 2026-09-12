@@ -14,10 +14,21 @@ img{
 
 /* Container */ 
 .container {
+    max-width: 100%;
+    width: 100%; 
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
 }
 
+/* Cards in general */
 .card {
     border: 1px solid white /* So I can see the spacing between the pictures. */ 
+}
+
+/* Footer */ 
+footer {
+text-align: center;
+color: #0561ec;
+font-size: 15px;
 }
