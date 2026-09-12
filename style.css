@@ -26,6 +26,8 @@ img{
     border: 1px solid rgb(255, 253, 253) /* So I can see the spacing between the pictures. */ 
 }
 
+/* Art categories start */ 
+/* card classes -->  <figure class="x"> */ 
 .modern-art {
     text-align:center; 
     color:#0561ec;
@@ -79,6 +81,7 @@ img{
     color:#0561ec;
     font-size: 20px;
 }
+/* End */ 
 
 /* Footer */ 
 footer {
