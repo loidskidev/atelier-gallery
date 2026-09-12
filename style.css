@@ -12,6 +12,7 @@ img{
     object-fit: cover;
 }
 
+/* xxpx, xx%, 3 Colums */ 
 .container {
     display: grid;
     grid-template-columns: 600px 900px 600px;
