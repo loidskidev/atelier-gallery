@@ -15,5 +15,9 @@ img{
 /* Container */ 
 .container {
     display: grid;
-    grid-template-columns: 600px 900px 600px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    border: 1px solid white /* So I can see the spacing between the pictures. */ 
 }
