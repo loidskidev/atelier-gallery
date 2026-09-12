@@ -26,6 +26,60 @@ img{
     border: 1px solid rgb(255, 253, 253) /* So I can see the spacing between the pictures. */ 
 }
 
+.modern-art {
+    text-align:center; 
+    color:#0561ec;
+    font-size: 20px;
+}
+
+.sculptures {
+    text-align:center; 
+    color:#0561ec;
+    font-size: 20px;
+}
+
+.photography {
+    text-align:center; 
+    color:#0561ec;
+    font-size: 20px;
+}
+
+.abstract {
+    text-align:center; 
+    color:#0561ec;
+    font-size: 20px;
+}
+
+.landscape {
+    text-align:center; 
+    color:#0561ec;
+    font-size: 20px;
+}
+
+.portraits {
+    text-align:center; 
+    color:#0561ec;
+    font-size: 20px;
+}
+
+.installations {
+    text-align:center; 
+    color:#0561ec;
+    font-size: 20px;
+}
+
+.digital-art {
+    text-align:center; 
+    color:#0561ec;
+    font-size: 20px;
+}
+
+.street-art {
+    text-align:center; 
+    color:#0561ec;
+    font-size: 20px;
+}
+
 /* Footer */ 
 footer {
 text-align: center;
