@@ -1,0 +1,13 @@
+/* Every HTML Element */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Image Structure */
+img{
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
