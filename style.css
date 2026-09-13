@@ -91,6 +91,12 @@ figcaption {
     padding: 5px;
 }
 
+.exhibition-intro {
+    padding: 2rem;
+    line-height: 1.5;
+}
+
+
 /* About page: Spacing, font and line height for the main content */ 
 .about-me {
     display: grid;
