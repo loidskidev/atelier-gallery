@@ -18,7 +18,7 @@
 
 /* Top navigation links */ 
 .top-nav a {
-    font-weight:bold 
+    font-weight:bold; 
 }
 /* Gallery heading: pushes the navigation links to the right side  */ 
 h1 {
@@ -48,11 +48,11 @@ h1 {
 
 /* Artwork gallery: three columns on larger screens */ 
 .container {
-display: grid;
-grid-template-columns: repeat(3,1fr);
-gap: 50px;
-background-color:#feffff;
-padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    background-color:#feffff;
+    padding: 10px;
 }
 
 /* Artwork cards: allows shrinking within the grid and add a border */
@@ -121,9 +121,9 @@ figcaption {
 
 /* Footer: general text settings */ 
 footer {
-text-align: center;
-color: #0561ec;
-font-size: 15px;
+    text-align: center;
+    color: #0561ec;
+    font-size: 15px;
 }
 
 /* Footer navigation: three equally sized columns */
