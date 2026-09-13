@@ -94,7 +94,7 @@ figcaption {
 
 /* Tablet // 768 x 1200 */ 
 @media (max-width: 768px) {
-    .container {
+    .container .boxsize{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
