@@ -6,14 +6,19 @@
 }
 
 /* Top navigation: gallery name and page links in a row */ 
-.top-nav { 
+.top-nav{ 
     width: 100%;
     height: 100%;
-    font-size: 10px; 
+    font-size: 15px; 
     text-align: right;
     gap: 10px;
     display: flex;
     flex-direction: row;
+}
+
+/* Top navigation links */ 
+.top-nav a {
+    font-weight:bold 
 }
 /* Gallery heading: pushes the navigation links to the right side  */ 
 h1 {
@@ -43,7 +48,7 @@ h1 {
 
 /* Artwork gallery: three columns on larger screens */ 
 .container {
-display: grid; 
+display: grid;
 grid-template-columns: repeat(3,1fr);
 gap: 50px;
 background-color:#feffff;
