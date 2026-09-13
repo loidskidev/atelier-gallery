@@ -1,9 +1,11 @@
-/* Every HTML Element */ 
+/* Resets default spacing and includes padding/borders in element sizes */ 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Top navigation: gallery name and page links in a row */ 
 .top-nav { 
     width: 100%;
     height: 100%;
@@ -13,7 +15,7 @@
     display: flex;
     flex-direction: row;
 }
-/* Header */ 
+/* Gallery heading: pushes the navigation links to the right side  */ 
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     margin-right: auto;
@@ -21,12 +23,14 @@ h1 {
     text-align: left;
 }
 
+/* Category navigation: nine columns on larger screens */ 
 .boxsize {
     display: grid;
     gap: 0rem;
     grid-template-columns: repeat(9, 1fr);
 }
 
+/* Individual category links */ 
 .box {
     background-color:#0561ec;
     color: white;
@@ -36,9 +40,8 @@ h1 {
     font-size: 1rem;
 }
 
-/* End */ 
 
-/* Container */ 
+/* Artwork gallery: three columns on larger screens */ 
 .container {
 display: grid; 
 grid-template-columns: repeat(3,1fr);
@@ -47,7 +50,7 @@ background-color:#feffff;
 padding: 10px;
 }
 
-/* Cards in general */
+/* Artwork cards: allows shrinking within the grid and add a border */
 .card {
     min-width: 0;
     background-color:#feffff;
@@ -58,7 +61,7 @@ padding: 10px;
     text-align: center;
 }
 
-/* Image Structure */
+/* Artwork images: fills the available width and crop to a fixed height */
 .card img {
     display: block; 
     width: 100%; 
@@ -66,8 +69,7 @@ padding: 10px;
     object-fit: cover;
 }
 
-/* Each "figure" is the positioning reference for its caption */ 
-
+/* Figure: positioning reference for its caption */ 
 figure {
     margin: 0; 
     min-width: 0;
@@ -76,7 +78,7 @@ figure {
     position: relative; 
 }
 
-/* Here the caption places over the bottom of the image, with a transparent dark background */ 
+/* Caption: overlays the image bottom with a semi.transparent background */ 
 figcaption {
     position: absolute;
     left: 0;
@@ -88,12 +90,48 @@ figcaption {
     width: 100%;
     padding: 5px;
 }
-/* End of image captions */ 
 
-/* Media queries */
+/* About page: Spacing, font and line height for the main content */ 
+.about-me {
+    display: grid;
+    gap: 1rem;
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
 
+/*About page: Story and Mission side by side */
+.about-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
 
-/* Tablet // 768 x 1200 */ 
+/* Footer: general text settings */ 
+footer {
+text-align: center;
+color: #0561ec;
+font-size: 15px;
+}
+
+/* Footer navigation: three equally sized columns */
+.footersize {
+    display: grid;
+    gap: 0rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Individual footer links */
+.fz {
+    background-color:#0561ec;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Screens up to 768px:- (Tablets) two artwork and three category columns*/ 
 @media (max-width: 768px) {
     .container{
         display: grid;
@@ -106,52 +144,13 @@ figcaption {
     }
 }
 
-/* Mobile // 480 x 480 */ 
+/* Screens up to 480px: - (Mobile) stack artworks and About sections */  
 @media (max-width: 480px) {
     .container {
         grid-template-columns: 1fr;
         gap: 10px;
     }
-}
 
-/* Footer */ 
-footer {
-text-align: center;
-color: #0561ec;
-font-size: 15px;
-}
-
-.footersize {
-    display: grid;
-    gap: 0rem;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.fz {
-    background-color:#0561ec;
-    color: white;
-    padding: 0.5rem;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-.about-me {
-    display: grid;
-    gap: 1rem;
-    padding: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-}
-
-.about-columns {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-}
-
-/* Stack Story and Mission on mobile */
-@media (max-width: 480px) {
     .about-columns {
         grid-template-columns: 1fr; 
     }
