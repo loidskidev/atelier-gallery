@@ -21,6 +21,22 @@ h1 {
     text-align: left;
 }
 
+.boxsize {
+    display: grid;
+    gap: 1 rem;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.box {
+    background-color:#0561ec;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
 /* Container */ 
 .container {
 display: grid; 
