@@ -24,8 +24,8 @@ h1 {
 /* Container */ 
 .container {
 display: grid; 
-gap: 50px;
 grid-template-columns: auto auto auto;
+gap: 50px;
 background-color:#feffff;
 padding: 10px;
 }
@@ -71,6 +71,36 @@ figcaption {
     padding: 5px;
 }
 /* End of image captions */ 
+
+
+/* Media queries */
+
+/* Mobile */ 
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns:1fr;
+    }
+}
+
+/* Tablet */ 
+@media (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+
+/* //Desktop // Large screen */ 
+/* Tablet */ 
+@media (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
 
 /* Footer */ 
 footer {
